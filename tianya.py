@@ -16,7 +16,8 @@ def get_data_from_url(url):
 	print '[visit]', url
 	headers = {
 		'Referer':'http://bbs.tianya.cn/post-worldlook-223829-1.shtml',
-		'User-Agent':'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36'
+		'User-Agent':'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36',
+		'Cookie':'__guid2=2108452181; __utma=22245310.1924145466.1351944891.1408253603.1410408002.23; __utmz=22245310.1410408002.23.21.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); time=ct=1422815005.798; __u_a=v2.3.0; Hm_lvt_bc5755e0609123f78d0e816bf7dee255=1422808285,1422808481,1422808494; Hm_lpvt_bc5755e0609123f78d0e816bf7dee255=1422815007'
 	}
 	req = urllib2.Request(url, headers = headers)
 	try:
