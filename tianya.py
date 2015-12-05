@@ -158,7 +158,7 @@ if __name__ == '__main__':
 	pages = range(1,page_num+1)
 	
 	
-	for i in range(10):
+	for i in range(20):
 		threading.Thread(target=crawl).start()
 	
 
